@@ -1,5 +1,5 @@
 {
-  "name": "superset-chart-hello-world-yupest",
+  "name": "superset-chart-hello-world-whiteveld",
   "version": "0.0.0",
   "description": "A sample chart plugin for Superset demonstrating current best practices",
   "main": "src/chart.ts",
@@ -21,7 +21,7 @@
     "async",
     "plugin"
   ],
-  "author": "Yuliya Pestova",
+  "author": "NIK",
   "license": "Apache-2.0",
   "devDependencies": {
     "@airbnb/config-eslint": "^3.1.0",
