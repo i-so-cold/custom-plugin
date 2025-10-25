@@ -1,0 +1,11 @@
+services:
+  superset:
+    image: apache/superset:2.1.0  # ПРЯМО ИЗ DOCKER HUB
+    ports:
+      - "8088:8088"
+    volumes:
+      # КРИТИЧЕСКИ ВАЖНО: монтируем конфиг
+      - ./superset_config.py:/app/superset/superset_config.py
+    environment:
+      - SUPERSET_CONFIG_PATH=/app/superset/superset_config.py
+      - SUPERSET_SECRET_KEY= 'ВВЕДИТЕ В CMD КОМАНДУ openssl rand -base64 42'
